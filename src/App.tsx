@@ -34,7 +34,7 @@ const Portfolio = () => {
   const metrics = [
     { label: "Average ROAS Achievement", value: "4.2x", icon: TrendingUp },
     { label: "Lead Generation Boost", value: "8x", icon: Target },
-    { label: "Happy Clients Worldwide", value: "150+", icon: Users }
+    { label: "Happy Clients Worldwide", value: "100+", icon: Users }
   ];
 
   const services = [
@@ -169,7 +169,7 @@ const Portfolio = () => {
 
     animateNumber(320, 'roi');
     animateNumber(185, 'conversions');
-    animateNumber(150, 'clients');
+    animateNumber(100, 'clients');
   }, []);
 
   const handleWhatsAppClick = () => {
@@ -287,7 +287,7 @@ const Portfolio = () => {
                 <div className="text-4xl font-light mb-2 text-white">
                   {index === 0 && `4.2x`}
                   {index === 1 && `8x`}
-                  {index === 2 && `${animatedNumbers.clients}+`}
+                  {index === 2 && `100+`}
                 </div>
                 <p className="text-gray-400 text-sm">{metric.label}</p>
               </motion.div>
@@ -353,7 +353,7 @@ const Portfolio = () => {
               About Me
             </h2>
             <p className="text-xl text-gray-400 font-light max-w-3xl mx-auto">
-              5 years of transforming businesses through AI-enhanced digital marketing strategies with proven results across 150+ clients worldwide
+              5 years of transforming businesses through AI-enhanced digital marketing strategies with proven results across 100+ clients worldwide
             </p>
           </motion.div>
 
