@@ -532,7 +532,7 @@ const Portfolio = () => {
                 aria-label={`Testimonial from ${testimonial.author}`}
               >
                 <div className="flex mb-4" aria-label={`Rating: ${testimonial.rating} stars`}>
-                  {[...Array(testimonial.rating)].map((_, i) => (
+                  {[...Array(Math.floor(testimonial.rating || 0))].map((_, i) => (
                     <Star key={i} className="text-green-400 fill-current" size={16} aria-hidden="true" />
                   ))}
                 </div>
