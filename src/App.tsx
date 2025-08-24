@@ -109,31 +109,31 @@ const Portfolio = () => {
       quote: "Our Meta ads were losing money at 0.8x ROAS. Pranav turned it around to 4.2x return - now we're scaling profitably!",
       author: "Rajesh Sharma",
       position: "E-commerce Business Owner, Mumbai, India",
-      rating: 5
+      rating: 4.5
     },
     {
       quote: "Google Ads was draining our budget with zero results. After Pranav's optimization, we get 8x more qualified leads at 70% lower cost.",
       author: "David Thompson", 
       position: "Marketing Director, London, UK",
-      rating: 5
+      rating: 4
     },
     {
       quote: "We had zero online presence. Pranav's AI SEO strategy got us 12x organic traffic and #1 rankings for our main keywords.",
       author: "Ahmed Al-Rashid",
       position: "Real Estate Developer, Dubai, UAE",
-      rating: 5
+      rating: 4.5
     },
     {
       quote: "From burning money on ads to 4x ROAS in just 5 weeks. Pranav's strategies completely transformed our marketing ROI.",
       author: "Sarah Chen",
       position: "Restaurant Chain Owner, Toronto, Canada",
-      rating: 5
+      rating: 4
     },
     {
       quote: "Our Google Ads were a disaster - high costs, poor leads. Now we get 8x qualified prospects while spending 60% less. Amazing!",
       author: "James Mitchell",
       position: "Fitness Industry Entrepreneur, Sydney, Australia",
-      rating: 5
+      rating: 4.5
     }
   ];
 
