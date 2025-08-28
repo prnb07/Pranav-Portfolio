@@ -181,7 +181,7 @@ const Portfolio = () => {
   };
 
   const handleContactClick = () => {
-    window.open('mailto:prnb.metal07@gmail.com?subject=Marketing Partnership Inquiry&body=Hi Pranav, I would like to discuss how you can help grow my business with your AI-powered marketing strategies.', '_blank');
+    window.open('mailto:prnbverma97@gmail.com?subject=Marketing Partnership Inquiry&body=Hi Pranav, I would like to discuss how you can help grow my business with your AI-powered marketing strategies.', '_blank');
   };
 
   return (
@@ -642,7 +642,7 @@ const Portfolio = () => {
                 <Mail className="text-green-400" size={20} aria-hidden="true" />
                 <div>
                   <p className="text-white font-medium">Email</p>
-                  <p className="text-gray-400">prnb.metal07@gmail.com</p>
+                  <p className="text-gray-400">prnbverma97@gmail.com</p>
                 </div>
               </div>
 
@@ -693,7 +693,7 @@ const Portfolio = () => {
                   </motion.a>
                   
                   <motion.a
-                    href="mailto:prnb.metal07@gmail.com"
+                    href="mailto:prnbverma97@gmail.com"
                     className="flex items-center justify-center gap-3 p-4 bg-gray-900/50 border border-gray-700 hover:border-green-400 rounded-lg text-white transition-all duration-300 hover:bg-gray-900/70"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
