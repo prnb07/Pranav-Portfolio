@@ -443,12 +443,12 @@ const Portfolio = () => {
                   </div>
                 </div>
                 <p className="text-gray-300 mb-4">
-                  Successfully managed over ₹35+ Crore in Google Ads spend, consistently delivering exceptional ROI for clients.
+                  Successfully managed extensive Google Ads campaigns, consistently delivering exceptional ROI for clients across multiple industries.
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="p-3 bg-gray-800/50 rounded">
-                    <p className="text-green-400 font-medium">Total Spend</p>
-                    <p className="text-white">₹35+ Crore</p>
+                    <p className="text-green-400 font-medium">Campaign Scale</p>
+                    <p className="text-white">Enterprise Level</p>
                   </div>
                   <div className="p-3 bg-gray-800/50 rounded">
                     <p className="text-green-400 font-medium">Avg. ROAS</p>
@@ -479,12 +479,12 @@ const Portfolio = () => {
                   </div>
                 </div>
                 <p className="text-gray-300 mb-4">
-                  Managed over ₹25+ Crore in Meta Ads, driving significant customer acquisition and brand visibility across platforms.
+                  Managed large-scale Meta Ads campaigns, driving significant customer acquisition and brand visibility across platforms.
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="p-3 bg-gray-800/50 rounded">
-                    <p className="text-green-400 font-medium">Total Spend</p>
-                    <p className="text-white">₹25+ Crore</p>
+                    <p className="text-green-400 font-medium">Campaign Scale</p>
+                    <p className="text-white">Large Scale</p>
                   </div>
                   <div className="p-3 bg-gray-800/50 rounded">
                     <p className="text-green-400 font-medium">Campaigns</p>
@@ -504,9 +504,9 @@ const Portfolio = () => {
             viewport={{ once: true }}
           >
             <div className="p-8 bg-gradient-to-r from-gray-900/50 to-green-900/20 rounded-lg border border-green-400/30 mb-8">
-              <h3 className="text-2xl font-light text-white mb-4">Impressive Ad Spend Management</h3>
+              <h3 className="text-2xl font-light text-white mb-4">Comprehensive Campaign Portfolio</h3>
               <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                View detailed campaign screenshots, performance metrics, and success stories from my extensive portfolio of ₹60+ Crore in total ad spend management.
+                View detailed campaign screenshots, performance metrics, and success stories from my extensive portfolio of high-performing advertising campaigns.
               </p>
               <motion.button
                 onClick={handleViewPortfolioClick}
