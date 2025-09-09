@@ -184,6 +184,10 @@ const Portfolio = () => {
     window.open('mailto:prnbverma97@gmail.com?subject=Marketing Partnership Inquiry&body=Hi Pranav, I would like to discuss how you can help grow my business with your AI-powered marketing strategies.', '_blank');
   };
 
+  const handleViewPortfolioClick = () => {
+    window.open('https://drive.google.com/drive/folders/1wb6EZW1IyQadlzlytdeUCNuNzHc-rcF3?usp=sharing', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       {/* SEO and Accessibility */}
@@ -313,6 +317,17 @@ const Portfolio = () => {
             </motion.button>
             
             <motion.button
+              onClick={handleViewPortfolioClick}
+              className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black px-8 py-4 rounded-lg font-medium transition-all duration-300 flex items-center gap-3"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="View portfolio on Google Drive"
+            >
+              <ArrowRight size={20} aria-hidden="true" />
+              View Portfolio
+            </motion.button>
+            
+            <motion.button
               onClick={handleContactClick}
               className="border border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-8 py-4 rounded-lg font-medium transition-all duration-300 flex items-center gap-3"
               whileHover={{ scale: 1.05 }}
@@ -385,6 +400,126 @@ const Portfolio = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Previous Work Section */}
+      <section className="relative z-10 py-24 px-6" role="main" aria-labelledby="previous-work-heading">
+        <div className="max-w-6xl mx-auto">
+          <motion.div 
+            className="text-center mb-20"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 id="previous-work-heading" className="text-4xl md:text-5xl font-light mb-4 bg-gradient-to-r from-white to-green-400 bg-clip-text text-transparent">
+              Previous Work
+            </h2>
+            <p className="text-xl text-gray-400 font-light max-w-3xl mx-auto">
+              Explore my comprehensive portfolio showcasing successful campaigns and impressive ad spend management across multiple platforms
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            {/* Google Ads Performance */}
+            <motion.div
+              className="p-8 bg-gray-900/30 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-green-400/50 transition-all duration-500"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02 }}
+            >
+              <div className="mb-6">
+                <h3 className="text-2xl font-light text-white mb-4 flex items-center gap-3">
+                  <TrendingUp className="text-green-400" size={28} aria-hidden="true" />
+                  Google Ads Performance
+                </h3>
+                <div className="aspect-video bg-gray-800/50 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="text-center">
+                    <BarChart3 className="mx-auto mb-2 text-green-400" size={48} aria-hidden="true" />
+                    <p className="text-gray-400 text-sm">Campaign Dashboard Preview</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Successfully managed over ₹35+ Crore in Google Ads spend, consistently delivering exceptional ROI for clients.
+                </p>
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="p-3 bg-gray-800/50 rounded">
+                    <p className="text-green-400 font-medium">Total Spend</p>
+                    <p className="text-white">₹35+ Crore</p>
+                  </div>
+                  <div className="p-3 bg-gray-800/50 rounded">
+                    <p className="text-green-400 font-medium">Avg. ROAS</p>
+                    <p className="text-white">4.2x</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Meta Ads Performance */}
+            <motion.div
+              className="p-8 bg-gray-900/30 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-green-400/50 transition-all duration-500"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02 }}
+            >
+              <div className="mb-6">
+                <h3 className="text-2xl font-light text-white mb-4 flex items-center gap-3">
+                  <Target className="text-green-400" size={28} aria-hidden="true" />
+                  Meta Ads Performance
+                </h3>
+                <div className="aspect-video bg-gray-800/50 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="text-center">
+                    <DollarSign className="mx-auto mb-2 text-green-400" size={48} aria-hidden="true" />
+                    <p className="text-gray-400 text-sm">Campaign Analytics Preview</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Managed over ₹25+ Crore in Meta Ads, driving significant customer acquisition and brand visibility across platforms.
+                </p>
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="p-3 bg-gray-800/50 rounded">
+                    <p className="text-green-400 font-medium">Total Spend</p>
+                    <p className="text-white">₹25+ Crore</p>
+                  </div>
+                  <div className="p-3 bg-gray-800/50 rounded">
+                    <p className="text-green-400 font-medium">Campaigns</p>
+                    <p className="text-white">500+</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Portfolio CTA */}
+          <motion.div 
+            className="text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="p-8 bg-gradient-to-r from-gray-900/50 to-green-900/20 rounded-lg border border-green-400/30 mb-8">
+              <h3 className="text-2xl font-light text-white mb-4">Impressive Ad Spend Management</h3>
+              <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+                View detailed campaign screenshots, performance metrics, and success stories from my extensive portfolio of ₹60+ Crore in total ad spend management.
+              </p>
+              <motion.button
+                onClick={handleViewPortfolioClick}
+                className="bg-gradient-to-r from-green-400 to-green-500 hover:from-green-300 hover:to-green-400 text-black px-8 py-4 rounded-lg font-medium transition-all duration-300 flex items-center gap-3 mx-auto"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                aria-label="View complete portfolio on Google Drive"
+              >
+                <ArrowRight size={20} aria-hidden="true" />
+                View Complete Portfolio
+              </motion.button>
+            </div>
+          </motion.div>
         </div>
       </section>
 
