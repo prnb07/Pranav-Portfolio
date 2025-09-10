@@ -421,77 +421,71 @@ const Portfolio = () => {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          <div className="space-y-16 mb-16">
             {/* Google Ads Performance */}
             <motion.div
-              className="p-8 bg-gray-900/30 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-green-400/50 transition-all duration-500"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              className="text-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.02 }}
             >
-              <div className="mb-6">
-                <h3 className="text-2xl font-light text-white mb-4 flex items-center gap-3">
-                  <TrendingUp className="text-green-400" size={28} aria-hidden="true" />
-                  Google Ads Performance
-                </h3>
-                <div className="aspect-video bg-gray-800/50 rounded-lg mb-4 overflow-hidden">
-                  <img 
-                    src="/8.png" 
-                    alt="Google Ads campaign dashboard showing performance metrics and results"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
+              <h3 className="text-3xl font-light text-white mb-8 flex items-center justify-center gap-3">
+                <TrendingUp className="text-green-400" size={32} aria-hidden="true" />
+                Google Ads Performance
+              </h3>
+              <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-green-400/50 transition-all duration-500 p-4 mb-6">
+                <img 
+                  src="/8.png" 
+                  alt="Google Ads campaign dashboard showing performance metrics and results"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <p className="text-gray-300 mb-6 max-w-3xl mx-auto">
+                Successfully managed extensive Google Ads campaigns, consistently delivering exceptional ROI for clients across multiple industries.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div className="p-4 bg-gray-800/50 rounded-lg">
+                  <p className="text-green-400 font-medium">Campaign Scale</p>
+                  <p className="text-white text-lg">Enterprise Level</p>
                 </div>
-                <p className="text-gray-300 mb-4">
-                  Successfully managed extensive Google Ads campaigns, consistently delivering exceptional ROI for clients across multiple industries.
-                </p>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div className="p-3 bg-gray-800/50 rounded">
-                    <p className="text-green-400 font-medium">Campaign Scale</p>
-                    <p className="text-white">Enterprise Level</p>
-                  </div>
-                  <div className="p-3 bg-gray-800/50 rounded">
-                    <p className="text-green-400 font-medium">Avg. ROAS</p>
-                    <p className="text-white">4.2x</p>
-                  </div>
+                <div className="p-4 bg-gray-800/50 rounded-lg">
+                  <p className="text-green-400 font-medium">Avg. ROAS</p>
+                  <p className="text-white text-lg">4.2x</p>
                 </div>
               </div>
             </motion.div>
 
             {/* Meta Ads Performance */}
             <motion.div
-              className="p-8 bg-gray-900/30 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-green-400/50 transition-all duration-500"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              className="text-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.02 }}
             >
-              <div className="mb-6">
-                <h3 className="text-2xl font-light text-white mb-4 flex items-center gap-3">
-                  <Target className="text-green-400" size={28} aria-hidden="true" />
-                  Meta Ads Performance
-                </h3>
-                <div className="aspect-video bg-gray-800/50 rounded-lg mb-4 overflow-hidden">
-                  <img 
-                    src="/image.png" 
-                    alt="Meta Ads campaign dashboard displaying ad performance and analytics"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
+              <h3 className="text-3xl font-light text-white mb-8 flex items-center justify-center gap-3">
+                <Target className="text-green-400" size={32} aria-hidden="true" />
+                Meta Ads Performance
+              </h3>
+              <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-green-400/50 transition-all duration-500 p-4 mb-6">
+                <img 
+                  src="/image.png" 
+                  alt="Meta Ads campaign dashboard displaying ad performance and analytics"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <p className="text-gray-300 mb-6 max-w-3xl mx-auto">
+                Managed large-scale Meta Ads campaigns, driving significant customer acquisition and brand visibility across platforms.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div className="p-4 bg-gray-800/50 rounded-lg">
+                  <p className="text-green-400 font-medium">Campaign Scale</p>
+                  <p className="text-white text-lg">Large Scale</p>
                 </div>
-                <p className="text-gray-300 mb-4">
-                  Managed large-scale Meta Ads campaigns, driving significant customer acquisition and brand visibility across platforms.
-                </p>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div className="p-3 bg-gray-800/50 rounded">
-                    <p className="text-green-400 font-medium">Campaign Scale</p>
-                    <p className="text-white">Large Scale</p>
-                  </div>
-                  <div className="p-3 bg-gray-800/50 rounded">
-                    <p className="text-green-400 font-medium">Campaigns</p>
-                    <p className="text-white">500+</p>
-                  </div>
+                <div className="p-4 bg-gray-800/50 rounded-lg">
+                  <p className="text-green-400 font-medium">Campaigns</p>
+                  <p className="text-white text-lg">500+</p>
                 </div>
               </div>
             </motion.div>
