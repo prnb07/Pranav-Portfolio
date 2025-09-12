@@ -274,7 +274,7 @@ const Portfolio = () => {
             transition={{ duration: 1, delay: 0.4 }}
           >
             Transforming clicks into conversions with 
-            <span className="text-green-400"> AI precision</span> and 5 years of proven expertise
+            <span className="text-green-400"> AI precision</span> and proven expertise
           </motion.p>
 
           {/* Animated Metrics */}
@@ -375,7 +375,7 @@ const Portfolio = () => {
               About Me
             </h2>
             <p className="text-xl text-gray-400 font-light max-w-3xl mx-auto">
-              5 years of transforming businesses through AI-enhanced digital marketing strategies with proven results across 50+ clients worldwide
+              Transforming businesses through AI-enhanced digital marketing strategies with proven results across 50+ clients worldwide
             </p>
           </motion.div>
 
@@ -723,7 +723,7 @@ const Portfolio = () => {
             >
               <Zap className="mx-auto mb-4 text-green-400" size={40} aria-hidden="true" />
               <h3 className="text-lg font-medium mb-2 text-white">Expert Strategy</h3>
-              <p className="text-gray-400 text-sm">5 years of proven campaign optimization</p>
+              <p className="text-gray-400 text-sm">Proven campaign optimization expertise</p>
             </motion.div>
           </motion.div>
 
