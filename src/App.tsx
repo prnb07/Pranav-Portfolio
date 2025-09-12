@@ -60,11 +60,18 @@ const Portfolio = () => {
       icon: Brain
     },
     {
-      title: "LinkedIn Lead Generation",
-      problem: "Cold outreach with minimal response and engagement",
-      solution: "AI-personalized messaging + strategic connection building",
-      result: "8x response rate, 12x more qualified prospects",
+      title: "LinkedIn Paid Ads",
+      problem: "Poor B2B targeting, high cost per lead, low conversion rates",
+      solution: "Professional audience targeting + optimized ad formats",
+      result: "5x lead quality improvement, 65% lower cost per lead",
       icon: Users
+    },
+    {
+      title: "AI Automation",
+      problem: "Manual campaign management, slow optimization, human errors",
+      solution: "Automated bid management + AI-powered performance optimization",
+      result: "24/7 optimization, 40% efficiency boost, 3x faster results",
+      icon: Brain
     }
   ];
 
